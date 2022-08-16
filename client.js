@@ -131,7 +131,7 @@ const load = (id,randNumber) =>{
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 const getRoverImg = async (rover,render) =>{
 
-    let data = await fetch(`https://r950324c957034xreactr0lcusuk-3000.udacity-student-workspaces.com/rovers/${rover}`)
+    let data = await fetch(`http://localhost:3000/rovers/${rover}`)
         .then(res => res.json())
         .then(roverData =>  
             updatePhoto({"id":roverData.id, 
